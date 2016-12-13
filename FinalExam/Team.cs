@@ -11,17 +11,18 @@ namespace FinalExam
         public int TeamID { get; set; }
 
         [Required]
+        [Display(Name="Team")]
         [StringLength(50)]
         public string Name { get; set; }
-
+        [Display(Name = "GP")]
         public int? Games { get; set; }
-
+        [Display(Name = "W")]
         public int? Wins { get; set; }
-
+        [Display(Name = "L")]
         public int? Losses { get; set; }
-
+        [Display(Name = "OT")]
         public int? OvertimeLosses { get; set; }
-
+        [Display(Name = "PTS")]
         public int? Points { get; set; }
 
         public int DivisionID { get; set; }

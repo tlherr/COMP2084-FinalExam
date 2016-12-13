@@ -1,15 +1,12 @@
 ﻿@model IEnumerable<FinalExam.Team>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "NHL League Standings";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>NHL League Standings</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -36,7 +33,6 @@
         <th>
             @Html.DisplayNameFor(model => model.Logo)
         </th>
-        <th></th>
     </tr>
 
 @foreach (var item in Model) {
@@ -64,11 +60,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Logo)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TeamID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TeamID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TeamID })
         </td>
     </tr>
 }

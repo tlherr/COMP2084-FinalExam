@@ -18,6 +18,7 @@ namespace FinalExam
 
         [Required]
         [StringLength(50)]
+        [Display(Name = "Division")]
         public string Name { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

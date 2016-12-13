@@ -59,7 +59,7 @@
             @Html.DisplayFor(modelItem => item.Points)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Logo)
+            <img src="@String.Concat("/Content/images/", item.Logo)">
         </td>
     </tr>
 }
